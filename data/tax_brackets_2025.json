@@ -1,0 +1,9 @@
+{
+    "tax_brackets": [
+        {"limit": 11784, "rate": 0},
+        {"limit": 17005, "rate": 0.14},
+        {"limit": 66760, "rate": 0.24},
+        {"limit": 277825, "rate": 0.42},
+        {"limit": null, "rate": 0.45}
+    ]
+}

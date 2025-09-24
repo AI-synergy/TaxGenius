@@ -1,0 +1,8 @@
+- location: "a tech hub in central Berlin"
+  distance_km: 25
+- location: "a corporate office in Munich"
+  distance_km: 18
+- location: "a hospital in Hamburg"
+  distance_km: 35
+- location: "a university in Frankfurt"
+  distance_km: 12

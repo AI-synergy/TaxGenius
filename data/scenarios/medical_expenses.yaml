@@ -1,0 +1,6 @@
+- condition: "complex dental surgery"
+  cost: 4500
+- condition: "specialized physiotherapy for a chronic condition"
+  cost: 3200
+- condition: "the purchase of a necessary medical aid not covered by insurance"
+  cost: 2800
