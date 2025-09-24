@@ -1,0 +1,8 @@
+You are a creative writer. Your task is to write a short, engaging paragraph for a story about a German taxpayer. The paragraph should be based ONLY on the facts provided below.
+
+The paragraph should focus on: {chapter_title}.
+
+Facts to include:
+{facts}
+
+Write the paragraph in a narrative style. Do not just list the facts.

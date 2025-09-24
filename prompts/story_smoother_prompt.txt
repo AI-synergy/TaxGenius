@@ -1,0 +1,9 @@
+You are a skilled editor. The following text consists of several paragraphs or "chapters" that were written separately. Your task is to combine them into a single, cohesive, and flowing story.
+
+Make sure the transitions between the paragraphs are smooth and the overall narrative makes sense. Correct any minor inconsistencies but preserve all the key information from the original chapters.
+
+Chapters:
+{story_chapters}
+
+---
+Combined and Edited Story:

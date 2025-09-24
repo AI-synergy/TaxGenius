@@ -1,0 +1,12 @@
+{narrative}
+
+---
+**Question:**
+{question}
+
+---
+**Instructions:**
+1.  Read the story carefully and identify all relevant financial figures, including income and potential deductions.
+2.  Think step-by-step through the required calculations based on German tax principles for the year 2025.
+3.  State your reasoning clearly.
+4.  Conclude with your final calculated answer. Your final line must be in the format: "ANSWER: €[amount]". For example: "ANSWER: €54321.87"
