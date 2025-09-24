@@ -1,0 +1,103 @@
+{
+  "case_id": "employee_commuter_case_20250924_221843",
+  "input_data": {
+    "description": "The underlying symbolic reasoning tree used for generation.",
+    "symbolic_reasoning_tree": {
+      "root": {
+        "description": "Calculate taxable income for a German employee with a commute.",
+        "facts": [
+          {
+            "description": "Taxpayer Name",
+            "value": "Ben",
+            "type": "NARRATIVE",
+            "is_income": false,
+            "is_deduction": false,
+            "condition_for": null
+          },
+          {
+            "description": "Taxpayer Profession",
+            "value": "Marketing Manager",
+            "type": "NARRATIVE",
+            "is_income": false,
+            "is_deduction": false,
+            "condition_for": null
+          },
+          {
+            "description": "Work Location",
+            "value": "a corporate office in Munich",
+            "type": "NARRATIVE",
+            "is_income": false,
+            "is_deduction": false,
+            "condition_for": null
+          }
+        ],
+        "children": [
+          {
+            "description": "Income",
+            "facts": [
+              {
+                "description": "Gross Annual Salary",
+                "value": 57445,
+                "type": "QUANTITATIVE",
+                "is_income": true,
+                "is_deduction": false,
+                "condition_for": null
+              }
+            ],
+            "children": [],
+            "result": null
+          },
+          {
+            "description": "Income-Related Expenses (Werbungskosten)",
+            "facts": [],
+            "children": [
+              {
+                "description": "Commuter Allowance Deduction",
+                "facts": [
+                  {
+                    "description": "Total Commute Deduction",
+                    "value": 1456.92,
+                    "type": "QUANTITATIVE",
+                    "is_income": false,
+                    "is_deduction": true,
+                    "condition_for": null
+                  },
+                  {
+                    "description": "One-Way Commute Distance (km)",
+                    "value": 18,
+                    "type": "QUANTITATIVE",
+                    "is_income": false,
+                    "is_deduction": false,
+                    "condition_for": null
+                  },
+                  {
+                    "description": "Number of Work Days",
+                    "value": 213,
+                    "type": "QUANTITATIVE",
+                    "is_income": false,
+                    "is_deduction": false,
+                    "condition_for": null
+                  }
+                ],
+                "children": [],
+                "result": null
+              }
+            ],
+            "result": null
+          }
+        ],
+        "result": null
+      }
+    }
+  },
+  "generated_data": {
+    "description": "The final natural language narrative and ground truth answer.",
+    "narrative": "Ben stepped out of the bustling streets of Munich, briefcase in hand, and made his way to the corporate office where he served as a Marketing Manager. It was a typical Monday morning for him, and as he settled into his high-rise cubicle, he couldn't help but think about the long days ahead. With a gross annual salary of 57,445 euros, Ben had grown accustomed to the comfortable lifestyle it afforded him. He often joked with his colleagues about the perks of working in the financial hub of Germany, but deep down, he knew it was hard work and dedication that had earned him his spot. As he settled in for the day, Ben couldn't help but wonder what the taxman would be claiming from his paychecks, but for now, he pushed the thought aside, focusing on the tasks at hand.\n\nAcross town, Lena was sipping her morning coffee and contemplating the year ahead. As a successful marketing manager at a prominent German firm, she was no stranger to the demands of her job. Her gross annual salary had always been a reliable foundation for her family's financial stability, clocking in at a respectable €57,445. It was a number she'd grown accustomed to, one that allowed her to provide for her loved ones and plan for the future. But as she thought about the months to come, Lena couldn't help but wonder if her income would be enough to cover the rising costs of living in a country where the cost of housing and food seemed to be creeping up with each passing day.\n\nAs the two marketing professionals navigated the challenges of their jobs, their colleagues, like Anna, were tackling another critical aspect of their financial lives: taxes. Anna sat down to sort through her tax documents, feeling a sense of satisfaction knowing that her hard work was about to pay off. She carefully made her way through the pages, calculating the expenses that would soon be deducted from her taxable income. She knew that the total commute deduction was a zero she could live with, having opted to carpool with her colleagues instead of driving to the office alone. But it was the Werbungskosten, the income-related expenses, that truly set her apart. She had meticulously tracked every receipt, from the coffee she bought to fuel her late-night work sessions to the train tickets that took her to client meetings. Every little bit counted, and Anna was determined to get the most out of her expenses, knowing that the more she claimed, the less she'd have to hand over to the taxman. With a satisfied nod, she entered the final numbers into her tax return, feeling confident that she'd done everything by the book.\n\nAs Ben, Lena, and Anna each went about their day, they were all thinking about the same thing: the importance of managing their finances effectively. Whether it was navigating the rising costs of living in Germany or maximizing their tax deductions, each of them understood that their financial stability was a direct result of their hard work and responsible financial planning. And as they tackled the challenges of their jobs and their personal finances, they knew that they were not alone – they were part of a community of professionals in the financial hub of Germany, working together to achieve their goals and build a brighter future.",
+    "question": "Based on the story, what is the taxpayer's total taxable income for 2025 after all deductions and allowances?",
+    "ground_truth_answer": {
+      "value_eur": 44204.08,
+      "total_deductions_eur": 1456.92,
+      "explanation": "This answer is programmatically calculated from the symbolic reasoning tree."
+    }
+  }
+}

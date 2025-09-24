@@ -1,0 +1,72 @@
+{
+  "case_id": "extraordinary_burdens_medical_20250924_222019",
+  "input_data": {
+    "description": "The underlying symbolic reasoning tree used for generation.",
+    "symbolic_reasoning_tree": {
+      "root": {
+        "description": "Calculate taxable income for a taxpayer with high medical expenses.",
+        "facts": [
+          {
+            "description": "Taxpayer Name",
+            "value": "Stefan",
+            "type": "NARRATIVE",
+            "is_income": false,
+            "is_deduction": false,
+            "condition_for": null
+          },
+          {
+            "description": "Medical Condition",
+            "value": "complex dental surgery",
+            "type": "NARRATIVE",
+            "is_income": false,
+            "is_deduction": false,
+            "condition_for": null
+          }
+        ],
+        "children": [
+          {
+            "description": "Income",
+            "facts": [
+              {
+                "description": "Gross Annual Income",
+                "value": 67343,
+                "type": "QUANTITATIVE",
+                "is_income": true,
+                "is_deduction": false,
+                "condition_for": null
+              }
+            ],
+            "children": [],
+            "result": null
+          },
+          {
+            "description": "Extraordinary Burdens",
+            "facts": [
+              {
+                "description": "Total Medical Expenses Incurred",
+                "value": 4500,
+                "type": "QUANTITATIVE",
+                "is_income": false,
+                "is_deduction": true,
+                "condition_for": null
+              }
+            ],
+            "children": [],
+            "result": null
+          }
+        ],
+        "result": null
+      }
+    }
+  },
+  "generated_data": {
+    "description": "The final natural language narrative and ground truth answer.",
+    "narrative": "Stefan, a diligent employee in a bustling German city, sat at his kitchen table, sipping a steaming cup of coffee as he stared at the stack of bills in front of him. His annual salary of 67,343 euros had barely covered the essentials, let alone the unexpected expense that had hit him like a ton of bricks: a complex dental surgery that had left him with a whopping medical bill of 4,500 euros. As he rubbed the tiredness from his eyes, Stefan couldn't help but feel a twinge of anxiety about how he would manage to pay off the debt. He had always been a responsible taxpayer, diligent about meeting his obligations, but this unexpected hit had left him wondering if he would be able to make ends meet come tax time.\n\nAs Stefan struggled to come to terms with his financial situation, Anna, an accountant with a healthy gross annual income of 67,343 euros, was reflecting on her own journey to financial stability. Sitting at her desk, crunching numbers for the annual tax report, Anna felt a sense of satisfaction wash over her. She thought back to the early days, working long hours for modest pay, and how far she'd come. The steady stream of clients, the growth of her business, and the trust of her clients had all contributed to her rising income. Now, with her family's needs taken care of, Anna had the financial freedom to pursue her passions, whether that meant traveling to Europe or investing in local startups.\n\nHowever, for many Germans like Stefan and Anna, the reality of living with a high standard of living was far from straightforward. As Sabine, a fellow resident of the bustling German city, sat at her kitchen table, staring blankly at the stack of medical bills in front of her, she felt the weight of Germany's healthcare system bearing down on her. The latest tally brought her total medical expenses to a staggering 4,500 euros - a figure that made her breath catch in her throat. Like Stefan, Sabine had always taken pride in being a diligent taxpayer, contributing her fair share to the social safety net that was supposed to provide for her and her family in times of need. But now, as she struggled to make ends meet, Sabine couldn't help but wonder if the system was truly serving her. The costs had been mounting for months, from doctor's visits to hospital stays, and it seemed like every time she thought she was getting back on track, another bill would arrive, piling on the pressure. As she gazed out the window, Sabine felt the extraordinary burdens of Germany's healthcare system like a physical weight, pressing down on her shoulders and making it hard to breathe.\n\nIn fact, the stories of Stefan and Sabine were not isolated incidents, but rather symptoms of a larger issue affecting many Germans. As Anna continued to work on the tax report, she couldn't help but think about the complexities of Germany's healthcare system and how it impacted the lives of her clients. She knew that with the right guidance, many individuals like Stefan and Sabine could better navigate the system and make informed decisions about their finances. As she delved deeper into the numbers, Anna realized that her role as an accountant extended beyond just crunching numbers - it was also about helping people like Stefan and Sabine find financial stability and peace of mind in the face of uncertainty.",
+    "question": "Based on the story, what is the taxpayer's total taxable income for 2025 after all deductions and allowances?",
+    "ground_truth_answer": {
+      "value_eur": 53752.72,
+      "total_deductions_eur": 1806.28,
+      "explanation": "This answer is programmatically calculated from the symbolic reasoning tree."
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "case_id": "combined_freelancer_case_20250924_221635",
+  "input_data": {
+    "description": "The underlying symbolic reasoning tree used for generation.",
+    "symbolic_reasoning_tree": {
+      "root": {
+        "description": "Calculate comprehensive taxable income for a German freelancer.",
+        "facts": [
+          {
+            "description": "Taxpayer Name",
+            "value": "Sam",
+            "type": "NARRATIVE",
+            "is_income": false,
+            "is_deduction": false,
+            "condition_for": null
+          },
+          {
+            "description": "Taxpayer Profession",
+            "value": "Independent IT Consultant",
+            "type": "NARRATIVE",
+            "is_income": false,
+            "is_deduction": false,
+            "condition_for": null
+          },
+          {
+            "description": "Narrative Hook",
+            "value": "was surprised by their high revenue and was looking for all possible legal deductions.",
+            "type": "NARRATIVE",
+            "is_income": false,
+            "is_deduction": false,
+            "condition_for": null
+          }
+        ],
+        "children": [
+          {
+            "description": "Income",
+            "facts": [
+              {
+                "description": "Gross Annual Revenue",
+                "value": 140427,
+                "type": "QUANTITATIVE",
+                "is_income": true,
+                "is_deduction": false,
+                "condition_for": null
+              }
+            ],
+            "children": [],
+            "result": null
+          },
+          {
+            "description": "Business Expenses (Werbungskosten)",
+            "facts": [],
+            "children": [
+              {
+                "description": "Home Office Deduction",
+                "facts": [
+                  {
+                    "description": "Home Office Deduction Claimed",
+                    "value": 1260,
+                    "type": "QUANTITATIVE",
+                    "is_income": false,
+                    "is_deduction": true,
+                    "condition_for": null
+                  },
+                  {
+                    "description": "Narrative: Justification for Home Office",
+                    "value": "As a self-employed IT consultant, I require a dedicated workspace at home to deliver high-quality services to my clients, and the investment in the ergonomic chair is a necessary expense to ensure my physical and mental well-being while working long hours, thereby boosting my productivity and ultimately increasing my income.",
+                    "type": "NARRATIVE",
+                    "is_income": false,
+                    "is_deduction": false,
+                    "condition_for": null
+                  }
+                ],
+                "children": [],
+                "result": null
+              },
+              {
+                "description": "Work Equipment (Arbeitsmittel)",
+                "facts": [
+                  {
+                    "description": "Work Equipment Cost",
+                    "value": 3029,
+                    "type": "QUANTITATIVE",
+                    "is_income": false,
+                    "is_deduction": true,
+                    "condition_for": null
+                  },
+                  {
+                    "description": "Narrative: Reason for Equipment Purchase",
+                    "value": "The taxpayer's company recently expanded its service offerings to include data analytics and visualization services, necessitating the acquisition of a professional-grade software suite subscription to meet client demands and stay competitive in the market.",
+                    "type": "NARRATIVE",
+                    "is_income": false,
+                    "is_deduction": false,
+                    "condition_for": null
+                  }
+                ],
+                "children": [],
+                "result": null
+              }
+            ],
+            "result": null
+          },
+          {
+            "description": "Special Expenses (Sonderausgaben)",
+            "facts": [],
+            "children": [
+              {
+                "description": "Health Insurance",
+                "facts": [
+                  {
+                    "description": "Private Health Insurance Annual Premium",
+                    "value": 8299,
+                    "type": "QUANTITATIVE",
+                    "is_income": false,
+                    "is_deduction": true,
+                    "condition_for": null
+                  }
+                ],
+                "children": [],
+                "result": null
+              },
+              {
+                "description": "Charitable Donations",
+                "facts": [
+                  {
+                    "description": "Donation to Registered Charity",
+                    "value": 643,
+                    "type": "QUANTITATIVE",
+                    "is_income": false,
+                    "is_deduction": true,
+                    "condition_for": null
+                  }
+                ],
+                "children": [],
+                "result": null
+              }
+            ],
+            "result": null
+          }
+        ],
+        "result": null
+      }
+    }
+  },
+  "generated_data": {
+    "description": "The final natural language narrative and ground truth answer.",
+    "narrative": "As I sat at my cluttered desk, scrolling through my tax return with a critical eye, I couldn't help but feel a sense of satisfaction knowing that the numbers were adding up in my favor. As a diligent and calculating independent IT consultant, I had always made it a point to do my due diligence and maximize my deductions. My mind was racing as I tallied my numbers: a staggering gross annual revenue of 140427 euros – a figure that left me both stunned and eager to optimize my tax liability.\n\nMy eyes landed on the various line items that caught my attention, starting with the 643 euros I had donated to a registered charity, a cause close to my heart. However, it was the other expenses that truly stood out: the home office deduction of 1260 euros, which I justified as a necessary expense to maintain my productivity and deliver top-notch services to my clients. My home office, equipped with a pricey ergonomic chair, was an essential part of my work setup, allowing me to log long hours without compromising my physical and mental well-being.\n\nAs I delved deeper into my expenses, I also had to consider the annual premium of 8299 euros for my private health insurance, a necessary expense that came with the territory of being my own boss. And then there was the company's recent expansion into data analytics and visualization services, which had prompted the purchase of a professional-grade software suite subscription for 3029 euros. I argued that this investment was a crucial step in staying competitive in the market and meeting the demands of my discerning clients.\n\nAs I finished up my tax return, I felt a sense of pride and satisfaction, knowing that I had done my due diligence to minimize my tax liability. This was a sentiment shared by many self-employed individuals, including my friend Hans, who called the bustling streets of Munich home. He, too, had built a successful import-export business from the ground up, raking in a tidy sum of 140427 euros in gross annual revenue. As he sat at his desk, crunching the numbers for his annual tax return, he felt a sense of pride and satisfaction, knowing that his hard work was paying off in more ways than one.\n\nFor me, my home office was a vital hub for my thriving business as a self-employed IT consultant. The home office deduction was a small price to pay for the freedom and flexibility it afforded me to deliver high-quality services to my clients from the comfort of my own home. And let's be honest, it was a necessity – the long hours I spent hunched over my keyboard required an ergonomic chair that was more than just a luxury, but a vital investment in my physical and mental well-being.\n\nHowever, the home office deduction was just one of the smart investments I had made for my business. To stay ahead of the curve and meet the evolving demands of my clients, I knew I needed to upgrade my arsenal. That's why I splurged on a professional-grade software suite subscription for 3029 euros – a hefty cost, to be sure, but one that would give me the edge I needed to stay competitive in the market. With the addition of data analytics and visualization services to my repertoire, I was confident that this investment would pay off in spades, allowing me to tap into new revenue streams and take my business to the next level.\n\nFor others, like Ursula, who sat at her kitchen table, sipping her morning coffee and reflecting on the year that had passed, the focus was on making a difference in her community. She had always been mindful of living within her means, but this time she wanted to dig a little deeper. Her eyes landed on the expense report she had compiled, and one item in particular caught her attention: the donations she had made to her favorite registered charity. A total of 643 euros had been set aside, a small but significant contribution she felt was essential to making a difference in her community. However, as she delved further into the report, she noticed another expense that made her pause – her private health insurance premium had been a whopping 8,299 euros. The cost was a bitter pill to swallow, but Ursula knew it was a necessary one, and she took comfort in knowing that she was well-covered in case of an emergency.",
+    "question": "Based on the story, what is the taxpayer's total taxable income for 2025 after all deductions and allowances?",
+    "ground_truth_answer": {
+      "value_eur": 115412,
+      "total_deductions_eur": 13231,
+      "explanation": "This answer is programmatically calculated from the symbolic reasoning tree."
+    }
+  }
+}
