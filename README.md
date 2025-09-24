@@ -118,8 +118,3 @@ The framework is designed to be easily extensible. To add a new tax law scenario
     ```bash
     python main.py --template capital_gains_case
     ```
-
-<!-- end list -->
-
-```
-```
