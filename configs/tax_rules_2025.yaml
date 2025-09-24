@@ -1,0 +1,13 @@
+# Projected Tax Rules for Germany (2025)
+# DISCLAIMER: Based on proposals and forecasts. For simulation only.
+
+grundfreibetrag: 11784
+
+# Werbungskosten (Income-Related Expenses)
+home_office_lump_sum_max: 1260
+commuter_allowance_per_km: 0.38 # For the first 20km
+
+# Außergewöhnliche Belastungen (Extraordinary Burdens)
+# Percentage of income considered a "reasonable burden" for a single person with low income.
+# This is a highly simplified model.
+reasonable_burden_percentage_low_income: 0.04

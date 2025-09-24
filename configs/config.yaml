@@ -1,0 +1,11 @@
+# Configuration for Groq API
+llm:
+  # Get your free Groq API key from: https://console.groq.com/keys
+  groq_api_key: "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" # <-- IMPORTANT: REPLACE THIS
+  
+  # We will use Llama 3 70b, a powerful open-source model.
+  # Other options include: 'llama3-8b-8192', 'mixtral-8x7b-32768'
+  model: "llama-3.1-8b-instant"
+  
+  temperature: 0.7
+  max_tokens: 131072
